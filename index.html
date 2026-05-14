@@ -40,15 +40,15 @@
             color:var(--white);
             overflow-x:hidden;
             position:relative;
-            background:#030508;
+            background:#0f1f2e;
             -webkit-font-smoothing:antialiased;
         }
         /* ========== BACKGROUND (fixed gradient + optional video) ========== */
         .bg-gradient{
             position:fixed;inset:0;z-index:-4;
             background:
-                radial-gradient(ellipse 100% 85% at 78% -5%, rgba(179,18,42,.28), transparent 50%),
-                radial-gradient(ellipse 90% 70% at 8% 25%, rgba(12,42,78,.9), transparent 58%),
+                radial-gradient(ellipse 100% 85% at 78% -5%, rgba(179,18,42,.42), transparent 50%),
+                radial-gradient(ellipse 90% 70% at 8% 25%, rgba(30,80,140,.82), transparent 58%),
                 radial-gradient(ellipse 80% 55% at 50% 110%, rgba(0,4,12,.95), transparent 55%),
                 linear-gradient(168deg, rgba(2,5,10,.35) 0%, rgba(6,13,24,.25) 40%, rgba(12,5,8,.2) 72%, rgba(20,2,8,.25) 100%);
             background-size:cover;
@@ -70,8 +70,8 @@
             width:auto;height:auto;
             object-fit:cover;
             background:#000;z-index:-3;
-            opacity:.55;
-            filter:saturate(.95) contrast(1.05) brightness(1);
+            opacity:.72;
+            filter:saturate(1.15) contrast(1.08) brightness(1.2);
         }
 
         .overlay-bg{ display:none; }
@@ -256,7 +256,7 @@
         }
         .hero-logo-wrap:hover{transform:perspective(900px) rotateX(4deg) rotateY(-3deg) scale(1.04);}
         .hero-logo-img{
-            width:min(78vw, 500px);height:auto;
+            width:min(58vw, 340px);height:auto;
             filter:drop-shadow(0 24px 60px rgba(0,0,0,.75)) drop-shadow(0 0 50px rgba(201,162,39,.3));
             animation:floatLogo 5s ease-in-out infinite;
         }
@@ -347,7 +347,7 @@
         .cv-upload-area:hover{border-color:var(--gold-light);background:rgba(201,162,39,.08);transform:scale(1.01);}
         .cv-upload-area i{font-size:2.4rem;color:var(--gold);margin-bottom:12px;display:block;}
         .cv-upload-area p{font-size:1rem;opacity:.8;}
-        .cv-upload-area span{font-size:.85rem;opacity:.55;display:block;margin-top:6px;}
+        .cv-upload-area span{font-size:.85rem;opacity:.72;display:block;margin-top:6px;}
         .cv-upload-area.drag-over{border-color:var(--gold-light);background:rgba(201,162,39,.14);transform:scale(1.02);box-shadow:0 0 36px rgba(201,162,39,.3);}
         #cvInput{position:absolute;inset:0;opacity:0;cursor:pointer;}
         .cv-file-name{margin-top:12px;font-size:.95rem;color:var(--gold-light);min-height:22px;}
@@ -492,8 +492,8 @@
 
         @media(max-width:768px){
             .hero-logo-wrap img{
-                width: 92vw !important;
-                max-width: 92vw !important;
+                width: 68vw !important;
+                max-width: 68vw !important;
                 height: auto !important;
                 object-fit: contain !important;
             }
